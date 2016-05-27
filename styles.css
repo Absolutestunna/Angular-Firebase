@@ -1,0 +1,11 @@
+body {
+  /*background-color: #4DA8C7;*/
+}
+
+md-input-container {
+  width: 100%;
+}
+#LandingPageCtrl {
+  width: 50%;
+  margin: 130px auto;
+}
