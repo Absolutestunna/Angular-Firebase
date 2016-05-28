@@ -22,8 +22,8 @@
 
 
     <!--Your Firebase library  -->
-    <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-    <script type="text/javascript" src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="node_modules/angularfire/dist/angularfire.js"></script>
 
     <!--Your application bootstrap  -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
@@ -38,10 +38,10 @@
   </head>
   <body ng-app="app">
 
-    <div id="LandingPageCtrl" ng-controller="LandingPageCtrl" class="col m12">
+    <div  ng-controller="LandingPageCtrl" class="col m12">
       <md-toolbar>
         <div class="md-toolbar-tools" >
-          <span>My App's Title</span>
+          <span>Ho-Login</span>
           <!-- fill up the space between left and right area -->
           <span flex></span>
           <span>
@@ -50,7 +50,8 @@
         </div>
       </md-toolbar>
 
-      <form name="userForm">
+
+      <form name="userForm" id="LandingPageCtrl">
         <md-input-container>
           <label>Email</label>
           <input name="email" type="email" ng-model="email" required>
